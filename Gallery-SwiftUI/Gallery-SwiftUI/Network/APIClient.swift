@@ -14,7 +14,7 @@ struct APIClient {
                 var urlComponents =  URLComponents(string: requirements.baseURL) else {
             throw NetworkErrors.invalidURL
         }
-        urlComponents.path += "/\(requirements.endpoint)"
+        urlComponents.path += "\(requirements.endpoint)"
         
         if let queryItems = requirements.queryItems {
             urlComponents.queryItems = queryItems
@@ -23,7 +23,6 @@ struct APIClient {
         guard let url = urlComponents.url else {
             throw NetworkErrors.invalidURL
         }
-        
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = requirements.method.rawValue
         urlRequest.allHTTPHeaderFields = requirements.headers

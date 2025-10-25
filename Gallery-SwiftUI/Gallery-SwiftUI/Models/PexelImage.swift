@@ -1,5 +1,5 @@
 //
-//  PostImage.swift
+//  PexelImage.swift
 //  Gallery-SwiftUI
 //
 //  Created by JM_Reddy on 25/10/25.
@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct Gallery:Codable, Identifiable {
+struct PexelImage:Codable, Identifiable {
     var id: UUID?
     var photos: [PostImage]?
     var page: Int?
     var total_results: Int?
+    var next_page: String?
 }
 
 struct PostImage: Codable,Identifiable {
@@ -26,7 +27,7 @@ struct PostImage: Codable,Identifiable {
     var avgColor: String?
     var liked: Bool?
     var alt:String?
-    
+    var src:PhotoSrc?
     
     enum CodingKeys: String, CodingKey {
         case photographerUrl = "photographer_url"
@@ -34,6 +35,7 @@ struct PostImage: Codable,Identifiable {
         case avgColor = "avg_color"
         case liked = "liked"
         case alt = "alt"
+        case src = "src"
     }
     
     init(from decoder: any Decoder) throws {
@@ -43,6 +45,19 @@ struct PostImage: Codable,Identifiable {
         self.avgColor = try container.decodeIfPresent(String.self, forKey: .avgColor)
         self.liked = try container.decodeIfPresent(Bool.self, forKey: .liked)
         self.alt = try container.decodeIfPresent(String.self, forKey: .alt)
+        self.src = try container.decodeIfPresent(PhotoSrc.self, forKey: .src)
     }
+}
+
+struct PhotoSrc: Codable,Identifiable {
+    var id:UUID?
+    var original:String?
+    var large2x:String?
+    var large:String?
+    var medium:String?
+    var small:String?
+    var portrait:String?
+    var landscape:String?
+    var tiny:String?
 }
 

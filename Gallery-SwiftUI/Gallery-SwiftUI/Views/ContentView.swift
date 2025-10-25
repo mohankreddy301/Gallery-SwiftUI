@@ -22,11 +22,8 @@ struct ContentView: View {
             } else if let error = viewModel.error {
                 Text("Error: \(error)").foregroundStyle(Color.red)
             }
-        }.onAppear() {
-            Task {
-                await viewModel.fetchImages()
-            }
-            
+        }.task {
+            await viewModel.fetchImages()
         }
     }
 }

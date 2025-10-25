@@ -9,8 +9,10 @@ import Foundation
 
 @Observable final class GalleryPostViewModel {
     
-    var posts: [PostImage] = []
-    var galleryData: Gallery?
+    var pexelVideo: PexelVideos?
+    var pexelImage: PexelImage?
+    var pexelCollection: PexelCollections?
+    
     var isLoading: Bool = false
     var error: String?
     private let apiClient: APIClient
@@ -19,13 +21,37 @@ import Foundation
         self.apiClient = apiClient
     }
     
-    
     func fetchImages() async  {
         isLoading = true
         error = nil
         do {
-            galleryData = try await apiClient.fetch(requirements: GetPostAPIData.getPosts)
-            print(galleryData)
+            pexelImage = try await apiClient.fetch(requirements: GetMediaData.getPosts)
+            await fetchVideos()
+        } catch {
+            self.error = error.localizedDescription
+            print(error.localizedDescription)
+        }
+        isLoading = false
+    }
+    
+    func fetchVideos() async  {
+        isLoading = true
+        error = nil
+        do {
+            pexelVideo = try await apiClient.fetch(requirements: GetMediaData.getVideos)
+            await fetchCollection()
+        } catch {
+            self.error = error.localizedDescription
+            print(error.localizedDescription)
+        }
+        isLoading = false
+    }
+    
+    func fetchCollection() async  {
+        isLoading = true
+        error = nil
+        do {
+            pexelCollection = try await apiClient.fetch(requirements: GetMediaData.getCollections)
         } catch {
             self.error = error.localizedDescription
             print(error.localizedDescription)

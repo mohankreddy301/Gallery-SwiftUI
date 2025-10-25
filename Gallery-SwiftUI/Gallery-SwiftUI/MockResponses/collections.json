@@ -1,0 +1,144 @@
+
+{
+    "page": 1,
+    "per_page": 15,
+    "collections": [
+        {
+            "id": "kd6jl4t",
+            "title": "Cherry Red: By the Pexels Community",
+            "description": "The winning submissions from the October 2025 Cherry Red challenge. ",
+            "private": false,
+            "media_count": 15,
+            "photos_count": 14,
+            "videos_count": 1
+        },
+        {
+            "id": "yejd2gf",
+            "title": "Turquoise: By the Pexels Community",
+            "description": "The winning submissions from the October 2025 Turquoise challenge.",
+            "private": false,
+            "media_count": 15,
+            "photos_count": 12,
+            "videos_count": 3
+        },
+        {
+            "id": "fuare7e",
+            "title": "Cozy Aesthetic",
+            "description": "Soft light. Slow mornings. The cozy moments where creativity comes to rest",
+            "private": false,
+            "media_count": 70,
+            "photos_count": 70,
+            "videos_count": 0
+        },
+        {
+            "id": "3vz6nef",
+            "title": "Sweater Weather",
+            "description": "Cozy knits and timeless layers made for crisp, cool days!",
+            "private": false,
+            "media_count": 133,
+            "photos_count": 104,
+            "videos_count": 29
+        },
+        {
+            "id": "eta6y9n",
+            "title": "The Vintage Edit",
+            "description": "A curated collection of timeless styles, retro charm, and nostalgic details that bring the past beautifully into the present.",
+            "private": false,
+            "media_count": 93,
+            "photos_count": 78,
+            "videos_count": 15
+        },
+        {
+            "id": "umazby3",
+            "title": "Trees of Tomorrow",
+            "description": "A visual journey of hope and renewal, capturing the moments of planting, nurturing, and growing trees that will shape a greener tomorrow",
+            "private": false,
+            "media_count": 52,
+            "photos_count": 42,
+            "videos_count": 10
+        },
+        {
+            "id": "mkuo3ci",
+            "title": "Pumpkin Spice Season 🎃",
+            "description": "",
+            "private": false,
+            "media_count": 68,
+            "photos_count": 59,
+            "videos_count": 9
+        },
+        {
+            "id": "kfaiy8l",
+            "title": "Autumn Videos",
+            "description": "A bundle of loop-ready 4K clips, whirling leaves, misty woods, and crackling fires, to add instant autumn warmth to any project",
+            "private": false,
+            "media_count": 110,
+            "photos_count": 0,
+            "videos_count": 110
+        },
+        {
+            "id": "mi3up33",
+            "title": "Autumn Desktop Wallpapers",
+            "description": "Bring the warmth of fall straight to your screen with Golden Days, a curated set of high-resolution desktop wallpapers inspired by everything we love about the season",
+            "private": false,
+            "media_count": 59,
+            "photos_count": 59,
+            "videos_count": 0
+        },
+        {
+            "id": "vlhsvu3",
+            "title": "Aurora Gold",
+            "description": "A luminous celebration of golden hour’s fleeting beauty",
+            "private": false,
+            "media_count": 123,
+            "photos_count": 100,
+            "videos_count": 23
+        },
+        {
+            "id": "bzj9eal",
+            "title": "Timeless Threads",
+            "description": "A curated collection of vintage fashion capturing the elegance, textures, and silhouettes that never go out of style",
+            "private": false,
+            "media_count": 156,
+            "photos_count": 131,
+            "videos_count": 25
+        },
+        {
+            "id": "i162won",
+            "title": "Halloween Aesthetics",
+            "description": "Where eerie meets elegant: a curated blend of haunting beauty and autumn warmth",
+            "private": false,
+            "media_count": 169,
+            "photos_count": 127,
+            "videos_count": 42
+        },
+        {
+            "id": "ebugivb",
+            "title": "The Looking Glass",
+            "description": "A diverse collection of mirrors that explores the many ways we frame, distort, and reflect the world around us",
+            "private": false,
+            "media_count": 73,
+            "photos_count": 73,
+            "videos_count": 0
+        },
+        {
+            "id": "xvbcvsw",
+            "title": "Midi Skirt Inspo",
+            "description": "",
+            "private": false,
+            "media_count": 48,
+            "photos_count": 48,
+            "videos_count": 0
+        },
+        {
+            "id": "r3j0xhz",
+            "title": "Summer Saturation",
+            "description": "A vivid celebration of summer’s bold colors and radiant light",
+            "private": false,
+            "media_count": 87,
+            "photos_count": 87,
+            "videos_count": 0
+        }
+    ],
+    "total_results": 1126,
+    "next_page": "https://api.pexels.com/v1/collections/featured?page=2&per_page=15"
+}
