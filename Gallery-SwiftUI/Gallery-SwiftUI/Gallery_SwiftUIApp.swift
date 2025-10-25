@@ -11,7 +11,7 @@ import SwiftUI
 struct Gallery_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(galleryPostViewModel: GalleryPostViewModel(apiClient: APIClient()))
         }
     }
 }
